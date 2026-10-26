@@ -12,9 +12,11 @@
 .footer{left:auto;right:max(32px,env(safe-area-inset-right));bottom:max(28px,env(safe-area-inset-bottom));padding:0;border:0;display:block;width:auto}.controls{width:auto;justify-content:flex-end;gap:4px;border:1px solid #d3ddc429;border-radius:35px;padding:7px 8px 7px 7px;background:#102b3070;backdrop-filter:blur(18px);box-shadow:0 5px 35px #06171b33}.mood-control{background:transparent;border:0;padding:0}.control-divider{margin:0 8px}.shade{background:linear-gradient(0deg,rgba(5,23,28,.25),transparent 23%)}@media(max-width:600px){.footer{left:auto;right:18px;bottom:max(20px,env(safe-area-inset-bottom))}.controls{gap:0;padding:6px}.mood{padding:11px 13px}.control-divider{margin:0 5px}.controls>.icon-button{width:38px}.shade{background:linear-gradient(0deg,rgba(5,23,28,.25),transparent 23%)}}
 
 /* A quiet, one-time invitation to see the whole painting on a phone. */
-.orientation-hint{display:none;position:absolute;z-index:2;top:max(34px,calc(env(safe-area-inset-top) + 22px));right:max(28px,calc(env(safe-area-inset-right) + 22px));align-items:center;gap:10px;pointer-events:none;color:rgba(244,236,219,.62);font:italic 400 clamp(21px,5.4vw,27px)/1.12 GeorgiaFallback,Georgia,'Times New Roman',serif;letter-spacing:-.55px;text-align:right;text-shadow:0 2px 22px #0c222840;opacity:0}
+.orientation-hint{display:none;position:absolute;z-index:2;top:max(34px,calc(env(safe-area-inset-top) + 22px));right:max(28px,calc(env(safe-area-inset-right) + 22px));align-items:center;gap:8px;pointer-events:none;color:rgba(244,240,230,.44);font:italic 400 clamp(18px,4.6vw,23px)/1.12 GeorgiaFallback,Georgia,'Times New Roman',serif;letter-spacing:-.55px;text-align:right;text-shadow:0 1px 1px #ffffff0a,0 2px 14px #0c22281a;opacity:0}
 .orientation-hint[hidden]{display:none}
-.orientation-symbol{width:49px;height:49px;flex:none;stroke:currentColor;stroke-width:1.05;stroke-linecap:round;stroke-linejoin:round}
+.orientation-symbol{width:42px;height:42px;flex:none;stroke:currentColor;stroke-width:1.05;stroke-linecap:round;stroke-linejoin:round}
+.orientation-device rect{fill:#ffffff05}
+.orientation-hint>span{background:linear-gradient(155deg,#fff9eb8c 0%,#e5eeec4d 58%,#fff9eb75 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .orientation-arc{opacity:.45}
 .orientation-device{transform-box:view-box;transform-origin:32px 32px}
 @media(max-width:900px) and (orientation:portrait){
