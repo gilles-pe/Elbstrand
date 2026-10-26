@@ -10,3 +10,19 @@
 @media(max-height:540px) and (orientation:landscape){.scene{min-height:0}.header{top:12px}.intro{top:25%}h1{font-size:48px;letter-spacing:-2px}.eyebrow{font-size:7px;margin-bottom:12px}.intro-copy,.intro-rule{display:none}.footer{bottom:14px;padding-top:12px;flex-wrap:nowrap}.controls{width:auto}.scene-caption{font-size:12px}.scene-caption small{font-size:6px}.beam-status{bottom:102px}.restore{top:12px}}
 
 .footer{left:auto;right:max(32px,env(safe-area-inset-right));bottom:max(28px,env(safe-area-inset-bottom));padding:0;border:0;display:block;width:auto}.controls{width:auto;justify-content:flex-end;gap:4px;border:1px solid #d3ddc429;border-radius:35px;padding:7px 8px 7px 7px;background:#102b3070;backdrop-filter:blur(18px);box-shadow:0 5px 35px #06171b33}.mood-control{background:transparent;border:0;padding:0}.control-divider{margin:0 8px}.shade{background:linear-gradient(0deg,rgba(5,23,28,.25),transparent 23%)}@media(max-width:600px){.footer{left:auto;right:18px;bottom:max(20px,env(safe-area-inset-bottom))}.controls{gap:0;padding:6px}.mood{padding:11px 13px}.control-divider{margin:0 5px}.controls>.icon-button{width:38px}.shade{background:linear-gradient(0deg,rgba(5,23,28,.25),transparent 23%)}}
+
+/* A quiet, one-time invitation to see the whole painting on a phone. */
+.orientation-hint{display:none;position:absolute;z-index:2;top:max(34px,calc(env(safe-area-inset-top) + 22px));right:max(28px,calc(env(safe-area-inset-right) + 22px));align-items:center;gap:10px;pointer-events:none;color:rgba(244,236,219,.62);font:italic 400 clamp(21px,5.4vw,27px)/1.12 GeorgiaFallback,Georgia,'Times New Roman',serif;letter-spacing:-.55px;text-align:right;text-shadow:0 2px 22px #0c222840;opacity:0}
+.orientation-hint[hidden]{display:none}
+.orientation-symbol{width:49px;height:49px;flex:none;stroke:currentColor;stroke-width:1.05;stroke-linecap:round;stroke-linejoin:round}
+.orientation-arc{opacity:.45}
+.orientation-device{transform-box:view-box;transform-origin:32px 32px}
+@media(max-width:900px) and (orientation:portrait){
+  .orientation-hint:not([hidden]){display:flex}
+  .orientation-hint.is-playing{animation:orientation-in 1.6s var(--ease) both,orientation-out 1.8s ease-in-out 5.6s forwards}
+  .orientation-hint.is-playing .orientation-device{animation:orientation-rotate 4s var(--ease) 1.6s both}
+}
+@keyframes orientation-in{from{opacity:0;transform:translateY(7px);filter:blur(2px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes orientation-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-5px)}}
+@keyframes orientation-rotate{0%,12%{transform:rotate(0)}78%,100%{transform:rotate(-90deg)}}
+@media(prefers-reduced-motion:reduce){.orientation-hint.is-playing{opacity:1}.orientation-hint .orientation-device{transform:rotate(-90deg)}}

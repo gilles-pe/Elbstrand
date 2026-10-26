@@ -2,7 +2,7 @@
 
 Eine animierte Ölmalerei vom Elbstrand bei Blankenese: Leuchtturm aus der Vogelperspektive, bewegtes Wasser und ein wandernder Lichtkegel. Freie künstlerische Interpretation.
 
-Die Seite zeigt ausschließlich die Landschaft und die Bedienelemente unten rechts: Abendlicht/Nacht, optionaler Wasserklang und Pause.
+Die Seite zeigt die Landschaft und die Bedienelemente unten rechts: Abendlicht/Nacht, optionaler Wasserklang und Pause. Nur im mobilen Hochformat (bis 900 px Breite) erscheint pro Seitenaufruf einmal oben rechts „Please turn your device“ in einer transparenten Serifenschrift, begleitet von einem langsam drehenden Handy. Nach sechs Sekunden geladener Szene blendet der Hinweis 1,6 Sekunden ein, bleibt vier Sekunden und blendet 1,8 Sekunden aus. Beim Drehen oder Verlassen des Tabs verschwindet er sofort. Reduzierte Bewegung deaktiviert die Überblendung und Drehung.
 
 ## Technik
 
