@@ -24,5 +24,5 @@
 }
 @keyframes orientation-in{from{opacity:0;transform:translateY(7px);filter:blur(2px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
 @keyframes orientation-out{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-5px)}}
-@keyframes orientation-rotate{0%,12%{transform:rotate(0)}78%,100%{transform:rotate(-90deg)}}
-@media(prefers-reduced-motion:reduce){.orientation-hint.is-playing{opacity:1}.orientation-hint .orientation-device{transform:rotate(-90deg)}}
+@keyframes orientation-rotate{0%,12%{transform:rotate(0)}78%,100%{transform:rotate(90deg)}}
+@media(prefers-reduced-motion:reduce){.orientation-hint.is-playing{opacity:1}.orientation-hint .orientation-device{transform:rotate(90deg)}}
